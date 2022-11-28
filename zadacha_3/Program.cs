@@ -1,11 +1,11 @@
 ﻿
-void CheckingTheDayOfTheWeek (int dayNumber) 
+void CheckingTheDayOfTheWeek (int DayNumber) 
 {
-  if (dayNumber == 6 || dayNumber == 7) 
+  if (DayNumber == 6 || DayNumber == 7) 
   {
   Console.WriteLine("(этот день выходной) -> да");
   }
-  else if (dayNumber < 1 || dayNumber > 7) 
+  else if (DayNumber < 1 || DayNumber > 7) 
   {
     Console.WriteLine("это не день недели");
   }
@@ -13,5 +13,5 @@ void CheckingTheDayOfTheWeek (int dayNumber)
 }
 
 Console.Write("Введи цифру, обозначающую день недели: ");
-int dayNumber = int.Parse(Console.ReadLine());
-CheckingTheDayOfTheWeek (dayNumber);
+int DayNumber = int.Parse(Console.ReadLine());
+CheckingTheDayOfTheWeek (DayNumber);
