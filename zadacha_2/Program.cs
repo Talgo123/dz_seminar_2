@@ -24,7 +24,7 @@
 // Альтернативное решение
 
 
-int number = new Random().Next(1,99999);
+int number = new Random().Next(1,999999);
 Console.WriteLine($"ввели число {number}");
 if (number < 100)
 {
@@ -32,8 +32,5 @@ if (number < 100)
     return;
 }
 string TextNumbers = number.ToString();  //перевели  цифру в строку
-if (TextNumbers.Length > 3)  
-{
-     TextNumbers = TextNumbers.Substring(0, TextNumbers.Length - (TextNumbers.Length - 3)); //оставили только 3 первые цифры в строке
-}
+TextNumbers = TextNumbers.Substring(0, TextNumbers.Length - (TextNumbers.Length - 3)); //оставили только 3 первые цифры в строке
 Console.WriteLine(TextNumbers[2]); // Показываем третью цифру под индексом 2
